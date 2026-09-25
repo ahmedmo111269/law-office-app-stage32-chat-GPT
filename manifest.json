@@ -1,0 +1,27 @@
+{
+  "id": "./index.html",
+  "name": "⚖️ مكتب الأستاذ / أحمد محمد خضير المحامى",
+  "short_name": "⚖️ مكتب الأستاذ / أحمد محمد خضير المحامى",
+  "description": "نظام محلي لإدارة مكتب المحاماة: القضايا والجلسات والأحكام والمالية، يعمل دون إنترنت.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f7f9",
+  "theme_color": "#1f2937",
+  "categories": ["business", "productivity", "utilities"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "إضافة سريعة", "short_name": "إضافة", "url": "./index.html#/quick-add" },
+    { "name": "اليوم", "short_name": "اليوم", "url": "./index.html#/daily" },
+    { "name": "البحث الشامل", "short_name": "بحث", "url": "./index.html#/search" }
+  ]
+}
