@@ -1,0 +1,50 @@
+PASS  Boot / IndexedDB opens                         قاعدة البيانات جاهزة — v15
+PASS  DB version reported                            v15
+PASS  Fresh DB: all stores created                   54 stores
+PASS  Fresh DB: all indexes created                  all present
+PASS  Migration v1 → v15                             stores:ok idx:ok client:kept appeal:kept flags01:true
+PASS  Migration v5 → v15                             stores:ok idx:ok client:kept appeal:kept flags01:true
+PASS  Migration v10 → v15                            stores:ok idx:ok client:kept appeal:kept flags01:true
+PASS  Migration v13 → v15                            stores:ok idx:ok client:kept appeal:kept flags01:true
+PASS  Migration v14 → v15                            stores:ok idx:ok client:kept appeal:kept flags01:true
+PASS  CRUD: clientCreated                            true
+PASS  CRUD: clientRead                               true
+PASS  CRUD: flagNormalisedOnWrite                    true
+PASS  CRUD: uidAssigned                              true
+PASS  CRUD: clientUpdated                            true
+PASS  CRUD: relationCreated                          true
+PASS  CRUD: judgmentAppealLinked                     true
+PASS  CRUD: moneyMinorUnits                          true
+PASS  CRUD: archivedIndexWorks                       true
+PASS  CRUD: archiveKeepsRow                          true
+PASS  CRUD: deleteWorks                              true
+PASS  CRUD: tombstoneWritten                         true
+PASS  Pagination: page size respected                50/50
+PASS  Pagination: no overlap between pages           overlap=0
+PASS  Pagination: 20 deep pages fast                 20 pages / 1000 rows in 65ms
+PASS  Backup: exports every row (>1000)              exported=2500 of 2500
+PASS  Restore: data restored after wipe              cleared=0 restored=2500/2500
+PASS  Restore: integrity check runs                  ok=true
+PASS  Encryption: wrong password rejected            تعذر فك التشفير: كلمة المرور خاطئة أو الملف تالف.
+PASS  Search: finds indexed match                    64ms, 1 hits
+PASS  Search: Arabic variant folding (احمد→أحمد)     
+PASS  Search: reaches the oldest records             total=1 sample=clients:عميل بحث 4999
+PASS  Search: index build is bounded                 4049ms for 5k records
+PASS  Sync: bundle parsed as merge                   merge
+PASS  Sync: record transferred A→B                   17 applied
+PASS  Sync: idempotent (2nd apply is no-op)          applied=0, count 1→1
+PASS  Sync: update propagates B→A                    applied=17, city=القاهرة
+PASS  Sync: concurrent edit keeps both versions      conflicts=1
+PASS  Security: correct PIN accepted                 
+PASS  Security: wrong PIN rejected                   
+PASS  Security: PIN change takes effect              old=false new=true
+PASS  Security: PIN can be cleared                   hasPin=false
+PASS  Integrity: dangling FK detected                4 issues
+PASS  Integrity: negative money detected             
+PASS  Integrity: dangling parent authority detected  
+PASS  Integrity: report marks DB unhealthy           ok=false
+PASS  UI: all routes render                          22/22
+PASS  UI: no console errors                          
+PASS  Mobile: no horizontal overflow (390px)         clean
+
+================ 48/48 PASSED ================

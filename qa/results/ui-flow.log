@@ -1,0 +1,33 @@
+PASS  UI: create client via form                        أخ أحمد محمد خضير الرقم القومي: 29801011234567 · 0100000000
+PASS  UI: edit client                                  
+PASS  UI: open Client 360                              #/clients?id=1&view=360
+PASS  UI: create case via form                         
+PASS  UI: open Case 360                                len=4627
+PASS  UI: quick add task                               
+PASS  UI: hearings page renders                        len=1027
+PASS  UI: global search returns rows                    أحمد محمد خضير العملاء · معرف داخلي 1 ↗ 
+PASS  UI: command palette opens (Ctrl+K)               
+PASS  UI: daily center renders                         len=3027
+PASS  UI: notification centre opens                    
+PASS  UI: plain backup downloads a valid file          law-office-backup-2026-09-25T06-53-36-995Z.json 23.1KB, clients=1
+PASS  UI: encrypted backup is AES-GCM wrapped          law-office-backup-encrypted-2026-09-25T06-53-37-088Z.lobak, kdf=PBKDF2-SHA-256
+PASS  UI: sync page shows device id                    
+PASS  UI: uid backfill runs                            كل السجلات تحمل معرّفًا عالميًا.
+PASS  UI: merge bundle exported (encrypted)            law-office-sync-2026-09-25T06-53-37-709Z.losync
+PASS  UI: data quality scan runs                        الحالة PASS مشاكل مرجعية 0 تحذيرات 0 مجموعات تكرار محتملة 0 وضع الفحص
+PASS  UI: search index status shown                    فهرس البحث مكتمل: ٤٠ مدخل، ٤ وثيقة مفهرسة.
+PASS  UI: reports page renders                         len=4707
+PASS  UI: reports aggregate actual cases               
+PASS  UI: saved report preset appears immediately      
+PASS  UI: placeholder cannot delete first saved preset 
+PASS  UI: report preset restores ISO date filters      
+PASS  UI: selected report preset deletes correctly     
+PASS  UI: statistics page renders                      len=2311
+PASS  UI: PIN saved from settings                      تم حفظ إعدادات الأمان.
+PASS  UI: manual lock shows the lock screen            
+PASS  UI: wrong PIN is rejected                        الرقم السري غير صحيح.
+PASS  UI: correct PIN unlocks                          
+PASS  UI: mobile 390px has no overflow                 0px
+PASS  UI: no console/page errors                       (none)
+
+=========== UI: 31/31 PASSED ===========

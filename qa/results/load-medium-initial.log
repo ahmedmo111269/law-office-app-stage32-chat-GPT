@@ -1,0 +1,12 @@
+
+================ MEDIUM ================
+{"clients":10000,"cases":10000,"hearings":30000,"procedures":50000,"tasks":10000}
+seed: {"clients":10000,"cases":10000,"hearings":30000,"procedures":50000,"tasks":10000} in 101.3s
+search index: ٧٤٥٬٩٧٨ postings in 372.6s
+timings(ms): {"page50":2,"pageDeep":45,"byIndex":1,"search":1341,"searchHits":0,"searchAr":122,"dashboard":33,"today":1,"attention":14,"health":1491,"count":28}
+ui render(ms): {"dashboard":1602,"cases":83,"clients":67,"hearings":54,"tasks":149,"reports":122,"data-quality":24}
+heap=10MB storage={"usageMB":62,"quotaMB":132}
+
+================ SUMMARY ================
+medium: seeded=١١٠٬٠٠٠ rows, seedTime=101.3s, index=372.6s, page50=2ms, search=1341ms, searchAr=122ms, dashboard=33ms, health(quick)=1491ms, heap=10MB
+errors: (none)

@@ -1,0 +1,29 @@
+PASS  Dates: Cairo calendar date, not UTC rollover       {"dateOnly":"2026-09-25","expected":"2026-09-25","today":"2026-09-25","zone":"Africa/Cairo"}
+PASS  Dates: date-only ISO survives western timezone     {"same":"2026-09-25","next":"2026-09-26","invalid":null}
+PASS  PWA: manifest is valid JSON                        ⚖️ مكتب الأستاذ / أحمد محمد خضير المحامى
+PASS  PWA: manifest identity uses its own project path   ./index.html
+PASS  PWA: manifest declares icons                       4 icons
+PASS  PWA: every icon resolves                           
+PASS  PWA: service worker registers                      http://127.0.0.1:8099/
+PASS  PWA: unrelated origin caches are preserved         {"keepsOtherCache":true,"falseUpdatesOnFirstInstall":0}
+PASS  PWA: first install does not claim an update        {"keepsOtherCache":true,"falseUpdatesOnFirstInstall":0}
+PASS  PWA: full office boots and renders cases offline   fetch={"ok":true,"status":200}
+PASS  PWA: benchmark page loads while offline            
+PASS  PWA: upgrade evicts only this scoped app cache     ["qa-unrelated-cache","law-office-shell-v1.0.0","law-office---shell-v3.0.2"]
+PASS  PWA: worker update reaches the visible reload notice once [{"type":"SW_UPDATED","version":"3.0.2"}]
+PASS  PDF: A4 report renders to PDF                      45.1 KB
+PASS  PDF: print mode actually hides controls            {"buttonHidden":true,"reportVisible":true,"title":"\"تقرير — ⚖️ مكتب الأستاذ / أحمد محمد خضير المحامى\""}
+PASS  CSV: cases downloads real rows                     cases-report-2026-09-25.csv BOM=true bytes=152
+PASS  CSV: hearings downloads real rows                  hearings-report-2026-09-25.csv BOM=true bytes=144
+PASS  CSV: tasks downloads real rows                     tasks-report-2026-09-25.csv BOM=true bytes=143
+PASS  CSV: financial downloads real rows                 financial-report-2026-09-25.csv BOM=true bytes=179
+PASS  Archive: UI client moves to archive                {"active":0,"archived":1}
+PASS  Restore: preview works through the UI              معاينة النسخةتاريخ الإنشاء: 2026-09-25T06:49:25.975Zإصدار التطبيق: 3.0.2 — قاعدة
+PASS  Restore: apply enabled after preview               disabled=null
+PASS  Restore: archived client is active again           activeBefore=0, afterRestore=1
+PASS  Restore: backup contained every client             clients in file=1
+PASS  Encryption: wrong password is refused in the UI    تم إنشاء النسخة المشفرة وتسجيلها.تعذر فك التشفير: كلمة المرور خاطئة أو
+PASS  Encryption: failed attempt leaves data intact      clients=1
+PASS  Browser: no console/page errors                    (none)
+
+=========== EXTRAS: 27/27 PASSED ===========

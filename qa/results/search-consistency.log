@@ -1,0 +1,18 @@
+PASS  Tracked add creates postings and searchDoc: id=1
+PASS  Tracked edit removes old token and adds new token: 
+PASS  Tracked delete removes postings and searchDoc: 
+PASS  Peer insert and update searchable without echoing to changeLog: 
+PASS  Peer delete removes imported postings: 
+PASS  Partial nonempty index is NOT reported ready: 
+PASS  Partial index rebuild preserves rows and restores indexed search: 
+PASS  Interrupted rebuild stays unready: 
+PASS  Interrupted rebuild recovers instead of skipping existing postings: 
+PASS  Search paginates beyond 200 without duplicates or omissions: 276/276 rows, 10 pages
+PASS  AND search chooses a selective token for old records: 
+PASS  Same-row-count bulk update persists an index-dirty marker: 
+PASS  Data Quality warns rather than calls partial postings complete: 
+PASS  Across a page restart, stale tokens remain unready: 
+PASS  Restarted session rebuilds and removes obsolete tokens: 
+PASS  No browser errors: 
+
+16/16 passed

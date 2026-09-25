@@ -1,0 +1,19 @@
+profile: persistent test profile storage: {"usageMB":0,"quotaMB":595}
+
+================ LARGE ================
+{"clients":100000,"cases":100000,"hearings":300000,"procedures":500000,"tasks":100000}
+seeded clients: 100000 rows in 14s, storage 38/595MB
+seeded cases: 100000 rows in 17s, storage 53/595MB
+seeded hearings: 300000 rows in 49s, storage 86/595MB
+seeded procedures: 500000 rows in 73s, storage 175/595MB
+seeded caseTasks: 100000 rows in 20s, storage 195/595MB
+seed: {"clients":100000,"cases":100000,"hearings":300000,"procedures":500000,"tasks":100000} in 173.5s
+search index: ٠ postings in 0.0s
+timings(ms): {"page50":4,"pageDeep":45,"byIndex":2,"search":105,"searchHits":0,"searchDegraded":true,"searchRecent":65,"searchRecentHits":1,"searchRecentDegraded":true,"searchAr":38,"searchArHits":0,"searchArDegraded":true,"dashboard":549,"today":2,"attention":17,"health":796,"count":341,"procedureRows":500000}
+INDEXED SEARCH NOT TESTED: full index was intentionally skipped; any search here is degraded fallback only.
+ui render(ms): {"dashboard":1232,"cases":366,"clients":401,"hearings":68,"tasks":122,"reports":129,"reportsAggregate":39291,"reportCancelNavigation":38,"data-quality":6}
+heap=3MB (CDP Runtime.getHeapUsage, post-test) storage={"usageMB":195,"quotaMB":595}
+
+================ SUMMARY ================
+large: seeded=١٬١٠٠٬٠٠٠ rows, seedTime=173.5s, index=0.0s, page50=4ms, search=105ms, searchAr=38ms, dashboard=549ms, health(quick)=796ms, heap=3MB
+errors: (none)

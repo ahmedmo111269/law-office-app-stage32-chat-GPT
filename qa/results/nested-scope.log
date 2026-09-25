@@ -1,0 +1,9 @@
+PASS  Nested-path office boots and renders cases: 
+PASS  Nested SW scope is limited to this GitHub Pages path: http://127.0.0.1:8099/law-office-app-stage32-chat-GPT/
+PASS  Nested manifest identity stays inside project: http://127.0.0.1:8099/law-office-app-stage32-chat-GPT/index.html
+PASS  Nested project uses an isolated versioned cache: 
+PASS  Nested office still boots and renders cases offline: 
+PASS  Nested benchmark page and JS load offline: 
+PASS  No browser errors: 
+
+7/7 passed

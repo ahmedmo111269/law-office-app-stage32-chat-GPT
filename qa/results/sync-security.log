@@ -1,0 +1,19 @@
+PASS  Merge bundle contains no plaintext client/change rows: 
+PASS  Wrong sync password rejected: 
+PASS  Encrypted merge imports a real indexed client: 17 changes
+PASS  Imported client remains searchable after local edit: 
+PASS  Snapshot text protects client fields too: 
+PASS  Snapshot parses as a snapshot with accurate count: 74
+PASS  Snapshot actually replaces data and rebuilds search: 
+PASS  Sync UI identifies snapshot and shows real record count: حزمة كاملة (snapshot)
+السجلات: ٧٤
+⚠️ حزمة كاملة (snapshot): تطبيقها يستبدل بيانات هذا الجهاز بعد أخذ نسخة طوارئ.
+PASS  Changing sync password invalidates previous preview: 
+PASS  Changing sync file invalidates previous preview: 
+PASS  Encrypted tombstone propagates B→A and removes search postings: 
+PASS  Restore reports an index failure instead of claiming success: 
+PASS  Newer-schema backup is rejected before modifying data: 
+PASS  Tampered backup checksum is rejected before modifying data: 
+PASS  No browser errors: 
+
+15/15 passed

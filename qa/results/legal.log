@@ -1,0 +1,12 @@
+PASS  Rules: every seeded and catalogue rule has 7 fields    16 seeded, missing=none
+PASS  Civil deadline: 40 calendar days, ISO local date       {"deadline":"2026-11-04","expected":"2026-11-04"}
+PASS  Labor & admin deadline calculators run                 labor=2026-10-05 admin=2026-11-24
+PASS  Family: saved payment reduces arrears exactly          {"totalDueMinor":20000,"totalPaidMinor":5000,"remainingMinor":15000}
+PASS  Family: legacy decimal input still converts to minor   paid=5000
+PASS  Currency: Arabic decimals + precision validation       {"westernDigits":12345,"arabicDigits":12345,"tooPreciseRejected":true}
+PASS  Criminal procedure law switches at 2026-10-01          egypt-criminal-procedure-legacy → egypt-criminal-procedure-174-2025
+PASS  Known-rule metadata backfills without overwriting notes {"source":"قانون المرافعات المدنية والتجارية رقم 13 لسنة 1968","preservedNotes":true,"verificationDate":"2026-09-24"}
+PASS  Undocumented custom rule cannot be calculated          
+PASS  Browser has no page/console errors                     
+
+=========== LEGAL & MONEY: 10/10 PASSED ===========

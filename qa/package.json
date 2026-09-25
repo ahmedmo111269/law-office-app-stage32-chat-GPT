@@ -1,0 +1,26 @@
+{
+  "name": "law-office-qa",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "serve": "node server.mjs",
+    "static": "node static-audit.mjs && node check-imports.mjs && (cd .. && qa/node_modules/.bin/eslint --config eslint.config.mjs js service-worker.js)",
+    "e2e": "node e2e.mjs",
+    "ui": "node ui-flow.mjs",
+    "extras": "node extras.mjs",
+    "matrix": "node browser-matrix.mjs",
+    "legal": "node legal.mjs",
+    "search": "node search-consistency.mjs",
+    "sync-security": "node sync-security.mjs",
+    "navigation": "node navigation-race.mjs",
+    "benchmark-page": "node benchmark-page.mjs",
+    "benchmark-scale": "node benchmark-scale.mjs",
+    "nested": "node nested-scope.mjs",
+    "load:small": "node load.mjs small",
+    "load:medium": "node load.mjs medium",
+    "load:large": "node load.mjs large"
+  },
+  "dependencies": { "playwright": "1.49.1" },
+  "devDependencies": { "eslint": "9.39.5", "globals": "15.15.0" }
+}

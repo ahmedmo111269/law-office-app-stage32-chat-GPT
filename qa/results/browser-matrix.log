@@ -1,0 +1,42 @@
+PASS  UI: create client                                      
+PASS  UI: create opponent                                    
+PASS  UI: create case                                        
+PASS  UI: case-client link appears without navigation        
+PASS  DB: case-client link persists                          
+PASS  UI: case-opponent link appears without navigation      
+PASS  DB: case-opponent link persists                        
+PASS  UI: create power of attorney for client                
+PASS  UI: linked POA renders in Case 360                     
+PASS  DB: case-POA link persists                             
+PASS  UI: create related second case                         
+PASS  UI: case graph has two nodes after link                
+PASS  DB: graph relation persists                            
+PASS  UI: timeline shows freshly added event                 
+PASS  UI: hearing appears after save in same route           
+PASS  UI: procedure appears after save in same route         
+PASS  DB: procedure links to hearing                         
+PASS  UI: task appears after save in same route              
+PASS  UI: task completion updates button                     
+PASS  DB: task status completed                              
+PASS  UI: judgment appears after save in same route          
+PASS  UI: appeal appears after save in same route            
+PASS  DB: appeal links correct judgment                      
+PASS  UI: finance shows amount in pounds                     
+PASS  DB: amount persists in minor units                     
+PASS  DB: family payment stored as amountMinor               
+PASS  UI: family arrears subtracts recorded payment          {"details":[{"category":"نفقة","fromDate":"2026-01-01","toDate":"2026-02-28","months":2,"monthlyAmountMinor":10000,"dueMinor":20000}],"totalDueMinor":20000,"totalPaidMinor":5000,"remainingMinor":15000,"overpaymentMinor":0,"currency":"EGP"}
+PASS  UI: labor record visible after save                    
+PASS  DB: labor wage kept in integer minor units             
+PASS  UI: legal calculator produces a dated result           
+PASS  DB: calculator saves the rule-specific result          rule #1
+PASS  UI: data-quality report downloads actual JSON          data-quality-2026-09-25.json
+PASS  UI: archive appeal removes it from the list            
+PASS  DB: archived appeal remains intact                     
+PASS  UI: archive opponent removes it from the list          
+PASS  DB: archived opponent remains intact                   
+PASS  UI: archive case removes it from the list              
+PASS  UI: restore case from archive returns it to active list 
+PASS  Browser: no page/console errors                        
+
+============ BROWSER MATRIX: 39/39 PASSED ============
+console/page errors: (none)

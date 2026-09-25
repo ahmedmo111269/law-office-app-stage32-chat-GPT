@@ -1,0 +1,5 @@
+PASS  Fast navigation settles on the latest tasks page: {"hash":"#/tasks","title":"المهام","visible":true,"loading":false}
+PASS  Earlier render never repaints over a later hearing page: 
+PASS  No browser errors during rapid navigation: 
+
+3/3 passed

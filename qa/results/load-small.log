@@ -1,0 +1,18 @@
+profile: isolated temporary context storage: {"usageMB":1,"quotaMB":107}
+
+================ SMALL ================
+{"clients":1000,"cases":1000,"hearings":3000,"procedures":5000,"tasks":1000}
+seeded clients: 1000 rows in 0s, storage 1/107MB
+seeded cases: 1000 rows in 0s, storage 2/107MB
+seeded hearings: 3000 rows in 1s, storage 2/107MB
+seeded procedures: 5000 rows in 2s, storage 7/107MB
+seeded caseTasks: 1000 rows in 1s, storage 8/107MB
+seed: {"clients":1000,"cases":1000,"hearings":3000,"procedures":5000,"tasks":1000} in 3.6s
+search index: ٧٤٬٥٤٣ postings in 38.3s
+timings(ms): {"page50":6,"pageDeep":36,"byIndex":1,"search":177,"searchHits":1,"searchDegraded":false,"searchRecent":3,"searchRecentHits":1,"searchRecentDegraded":false,"searchAr":3,"searchArHits":1,"searchArDegraded":false,"dashboard":5,"today":1,"attention":20,"health":273,"count":3,"procedureRows":5000}
+ui render(ms): {"dashboard":322,"cases":55,"clients":32,"hearings":50,"tasks":151,"reports":133,"reportsAggregate":296,"data-quality":28}
+heap=4MB (CDP Runtime.getHeapUsage, post-test) storage={"usageMB":14,"quotaMB":107}
+
+================ SUMMARY ================
+small: seeded=١١٬٠٠٠ rows, seedTime=3.6s, index=38.3s, page50=6ms, search=177ms, searchAr=3ms, dashboard=5ms, health(quick)=273ms, heap=4MB
+errors: (none)

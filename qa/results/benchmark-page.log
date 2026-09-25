@@ -1,0 +1,9 @@
+PASS  Performance link targets a real local page: 
+PASS  Small button writes, counts, pages and measures 11,000 real rows: :34,"deepRows":1000,"byIndexMs":0,"linkedHearings":3,"heapMB":10,"storage":{"originUsageMB":4,"originQuotaMB":109}}
+CLEANUP: all synthetic test stores are empty. LawOfficeDB was not touched.
+PASS  Tool automatically clears every synthetic store: 0,0,0,0,0
+PASS  Cancel stops the run and clears partial data: 0,0,0,0,0
+PASS  Benchmark does not modify real client store: 0 → 0
+PASS  No browser errors: 
+
+6/6 passed

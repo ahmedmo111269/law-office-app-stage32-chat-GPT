@@ -1,0 +1,12 @@
+
+================ LARGE ================
+{"clients":100000,"cases":100000,"hearings":300000,"procedures":500000,"tasks":100000}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.evaluate: QuotaExceededError
+    at /home/user/tests/load.mjs:30:27
+
+Node.js v20.20.2
+LOAD_EXIT_CODE=1

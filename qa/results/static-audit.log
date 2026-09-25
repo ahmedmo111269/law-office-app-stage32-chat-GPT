@@ -1,0 +1,38 @@
+
+> law-office-qa@1.0.0 static
+> node static-audit.mjs && node check-imports.mjs && (cd .. && qa/node_modules/.bin/eslint --config eslint.config.mjs js service-worker.js)
+
+PASS  node --check (95 JS/MJS files)                       
+PASS  indexedDB.open only in db/db.js                      
+PASS  no indexedDB.deleteDatabase                          
+PASS  no eval()                                            
+PASS  no new Function()                                    
+PASS  no TODO/FIXME/XXX                                    
+PASS  no obvious XSS sink (document.write)                 
+PASS  all runtime DB access goes through repositories      
+PASS  getAll() confined to repository layer                found only in: js/db/repositories.js
+PASS  no float parsing of money amounts                    
+PASS  all 54 stores present in schema                      
+INFO  duplicate export names across modules: 0
+PASS  app version matches service worker                   config=3.0.2 sw=3.0.2
+PASS  dbVersion matches latest migration                   db=15 max=15
+PASS  manifest has icons                                   4 icons
+PASS  manifest identity is scoped to this installed project ./index.html
+PASS  manifest uses the office name                        ⚖️ مكتب الأستاذ / أحمد محمد خضير المحامى
+PASS  index.html uses the office name                      
+PASS  HTML is RTL Arabic                                   
+PASS  all 37 routes implement a renderer                   
+PASS  all sidebar links resolve to registered routes       36 links
+PASS  service worker revalidates js/css                    
+PASS  service worker serves HTML network-first             
+PASS  cache name is versioned                              
+PASS  cache name is isolated by installation scope         
+PASS  all service worker precache assets exist             91 assets
+PASS  fresh offline install precaches every app module     complete
+
+ALL STATIC CHECKS PASSED
+Files scanned: 79
+Import statements checked: 310
+Named imports verified: 503
+
+✅ All imports resolve; all named exports exist.

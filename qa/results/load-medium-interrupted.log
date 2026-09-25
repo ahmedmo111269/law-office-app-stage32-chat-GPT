@@ -1,0 +1,12 @@
+profile: isolated temporary context storage: {"usageMB":0,"quotaMB":105}
+
+================ MEDIUM ================
+{"clients":10000,"cases":10000,"hearings":30000,"procedures":50000,"tasks":10000}
+seeded clients: 10000 rows in 3s, storage 4/105MB
+seeded cases: 10000 rows in 7s, storage 7/105MB
+seeded hearings: 30000 rows in 24s, storage 10/105MB
+seeded procedures: 50000 rows in 36s, storage 16/105MB
+seeded caseTasks: 10000 rows in 9s, storage 18/105MB
+seed: {"clients":10000,"cases":10000,"hearings":30000,"procedures":50000,"tasks":10000} in 79.7s
+
+INTERRUPTED: prior background process stopped when the workspace resumed across user turns; no index/route result was produced.

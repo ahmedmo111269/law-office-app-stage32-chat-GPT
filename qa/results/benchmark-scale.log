@@ -1,0 +1,9 @@
+PERSISTENT PROFILE quota=595MB; office sentinel id=1
+PASS  medium: writes, counts, actual FK keys, pages and index lookup: rows=110000 seed=12534ms page50=3ms deep=35ms storage={"originUsageMB":21,"originQuotaMB":595} wall=14567ms
+PASS  medium: cleanup empties only all synthetic stores: 0,0,0,0,0
+PASS  large: writes, counts, actual FK keys, pages and index lookup: rows=1100000 seed=136977ms page50=3ms deep=34ms storage={"originUsageMB":107,"originQuotaMB":595} wall=171330ms
+PASS  large: cleanup empties only all synthetic stores: 0,0,0,0,0
+PASS  Medium/Large do not modify the office client: {"count":1,"name":"علامة حماية بيانات المكتب"}
+PASS  No browser errors: 
+
+6/6 passed
