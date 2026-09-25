@@ -4,7 +4,7 @@ export const APP_CONFIG = Object.freeze({
   shortName: '⚖️ مكتب الأستاذ / أحمد محمد خضير المحامى',
   version: '3.0.2',
   dbName: 'LawOffice_Stage32_DB',
-  dbVersion: 1,
+  dbVersion: 16,
   backupFormat: 'law-office-backup',
   backupFormatVersion: 2,
   syncFormat: 'law-office-sync-package',
